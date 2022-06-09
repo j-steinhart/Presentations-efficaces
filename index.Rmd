@@ -1,10 +1,9 @@
 --- 
 title: "A GitBook Example for Teaching"
-author: "[dr. Caspar J. van Lissa](https://www.uu.nl/staff/CJvanLissa)"
+author: '[dr. Caspar J. van Lissa](https://www.uu.nl/staff/CJvanLissa)'
 date: "`r Sys.Date()`"
-description: This GitBook is an example of a GitBook for teaching. It can be 
-  adapted for specific courses. The output format for this example
-  is bookdown::gitbook.
+description: This GitBook is an example of a GitBook for teaching. It can be adapted
+  for specific courses. The output format for this example is bookdown::gitbook.
 documentclass: book
 github-repo: cjvanlissa/gitbook-demo
 link-citations: yes
