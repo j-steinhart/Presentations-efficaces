@@ -1,9 +1,9 @@
---- 
+---
 title: "Présentations efficaces dans le cadre scolaire et universitaire"
 author: "Julian Steinhart"
 date: "`r Sys.Date()`"
 description: This course is for learning how to design and give effective presentations.
-documentclass: book
+documentclass: article
 classoption: a4paper
 github-repo: cjvanlissa/gitbook-demo
 link-citations: yes
@@ -19,3 +19,11 @@ mainfont: Minion Pro
 # Introduction
 
 ## Compétences visées
+
+Les étudiantes savent:
+
+-   Planifier une présentation de manière autonome.
+
+-   Créer des diaporamas simples, attractifs et efficaces.
+
+-   Délivrer une présentation captivante et convaincante.

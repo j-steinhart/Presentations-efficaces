@@ -1,0 +1,59 @@
+# Concevoir la présentation
+
+Nous avons déjà vu qu'on ne démarre pas la préparation des sa présentation en cliquant sur PowerPoint. Cependant les diaporamas jouent un rôle important pour la présentation. Les diaporamas servent avant tout à souligner ce que vous dites. Elles ne sont ni notes, ni polycopié pour le public. Dans cette partie nous allons voir comment concevoir ces trois éléments essentielles pour la présentation.
+
+Dans certains cas il sera même possible que vous n'avez pas besoin de diapos. Quand vous voulez discuter en détail de certains diagrammes, graphiques ou faits, il est souvent envisageable de fournir seulement le polycopié et de baser son discours sur lui.
+
+## Les diapos
+
+Dans cette section nous allons voir d'après quels principes on peut concevoir sa présentation, afin de souligner de manière efficace son discours.
+
+### La grille de base
+
+### La relation "signal-noise"
+
+### Picture superiority effect
+
+### Contraster, aligner, rapprocher et répéter
+
+![Est-ce que le titre de la présentation est bien lisible ?](img/diapo-contrast.jpg)
+
+#### Que dire sur les points clés ?
+
+### Les éléments du design
+
+#### Répartition de l'espace
+
+#### Typographie
+
+#### Couleurs
+
+Avec les couleurs du diaporama il est possible de s'exprimer voire d'influencer le public d'une certaine manière. Cf. [Color Meanings](https://www.adobe.com/creativecloud/design/discover/color-meaning.html) pour explications plus précises sur significations des couleurs différents. Que faire si on a trouvé sa couleur principale? Comment obtenir une palette des couleurs adéquates? Un conseil: [Adobe Colors](www.colors.adobe.com). Ici vous pouvez à partir des schémas de combinaison des couleurs définir une palette harmonisée. Il est aussi possible de faire créer une palette a partir d'une photo clé qu'on va utiliser dans sa présentation. En plus il y a un tas de palettes déjà faites à découvrir -- donc pas besoin de concevoir une toute nouvelle palette.[^creer-diapos-1]
+
+[^creer-diapos-1]: Pour une explication comment créer une palette de couleurs en PowerPoint, voir cette vidéo: [YouTube](https://youtu.be/gp5yhXABP4I?t=150).
+
+### Une foire aux présentations modèles
+
+**Tache:** Créez un design avec une palette des couleurs, décidez vous aussi pour une police de caractères. Ajoutez ensuite une diapo avec la grille de vos diapos et deux diapos exemplaires. Un modèle est mis à votre disposition.[^creer-diapos-2]
+
+[^creer-diapos-2]: Vous trouverez des modèles à remplir ici: [Drive]()
+
+## Vos notes
+
+## Le polycopié
+
+Avant de commencer la section : trois diapos par pages A4 ne sont pas un polycopié. PowerPoint ou Keynote ne sont pas d'outils pour créer un text. Il y a des outils beaucoup plus appropriés : LaTeX, Microsoft Word, LibreOffice Writer, InDesgin...
+
+Pour créer des formats différents d'un document. Il peut être approprié de travailler en *Markdown*. Il y a des éditeurs diverses qui permettent d'écrire en *Markdown* (voir Tab. \@ref(tab:Editeurs-Markdown)). *Pandoc* permet ensuite d'émettre des documents dans différents formats.
+
+|                         |         |                                                       |
+|-----------------|-----------------|--------------------------------------|
+| RStudio                 | gratuit | possibilité de créer des documents html, pdf, epub... |
+| Typora                  | 15\$    | possibilité de créer des documents html, pdf, epub... |
+| Microsoft Visual Studio | gratuit | possibilité de créer des documents html, pdf, epub... |
+
+: (#tab:Editeurs-Markdown) Editeurs Markdown
+
+Pour obtenir des textes bien placés, je recommande fortement d'utiliser LaTeX. Si on se connaît bien en conception de documents, InDesign ou Scribus (gratuit) peuvent être une très bonne alternative. Microsoft Word est dans presque tous les cas le plus mauvais choix.
+
+### Une foire aux polycopiés modèles

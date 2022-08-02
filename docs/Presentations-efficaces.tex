@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  a4paper]{book}
+  a4paper]{article}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -34,15 +34,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Présentations efficaces dans le cadre scolaire et universitaire},
-  pdfauthor={Julian Steinhart},
-  pdflang={fr},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -121,6 +112,7 @@
 \def\languageshorthands#1{}
 \usepackage{booktabs}
 \usepackage{amsthm}
+\usepackage{microtype}
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
@@ -132,33 +124,53 @@
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Présentations efficaces dans le cadre scolaire et universitaire},
+  pdfauthor={Julian Steinhart},
+  pdflang={fr},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \title{Présentations efficaces dans le cadre scolaire et universitaire}
 \author{Julian Steinhart}
-\date{2022-06-09}
+\date{2022-07-03}
 
 \begin{document}
 \maketitle
 
 {
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \tableofcontents
 }
 \hypertarget{introduction}{%
-\chapter{Introduction}\label{introduction}}
+\section{Introduction}\label{introduction}}
 
 \hypertarget{compuxe9tences-visuxe9es}{%
-\section{Compétences visées}\label{compuxe9tences-visuxe9es}}
+\subsection{Compétences visées}\label{compuxe9tences-visuxe9es}}
+
+Les étudiantes savent:
+
+\begin{itemize}
+\item
+  Planifier une présentation de manière autonome.
+\item
+  Créer des diaporamas simples, attractifs et efficaces.
+\item
+  Délivrer une présentation captivante et convaincante.
+\end{itemize}
 
 \hypertarget{plan-du-cours}{%
-\chapter{Plan du cours}\label{plan-du-cours}}
+\section{Plan du cours}\label{plan-du-cours}}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1806}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3889}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0556}}@{}}
 \caption{Dates et thèmes du cours}\tabularnewline
-\toprule
+\toprule()
 \endhead
 10/09/2022 & Introduction & \\
 & Planifier la présentation & \\
@@ -172,11 +184,91 @@ Comment choisir un grpahe & \\
 & Espace pour vous & \\
 & Espace pour vous & \\
 & Espace pour vous & \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
+\hypertarget{concevoir-la-pruxe9sentation}{%
+\section{Concevoir la présentation}\label{concevoir-la-pruxe9sentation}}
+
+Nous avons déjà vu qu'on ne démarre pas la préparation des sa présentation en cliquant sur PowerPoint. Cependant les diaporamas jouent un rôle important pour la présentation. Les diaporamas servent avant tout à souligner ce que vous dites. Elles ne sont ni notes, ni polycopié pour le public. Dans cette partie nous allons voir comment concevoir ces trois éléments essentielles pour la présentation.
+
+Dans certains cas il sera même possible que vous n'avez pas besoin de diapos. Quand vous voulez discuter en détail de certains diagrammes, graphiques ou faits, il est souvent envisageable de fournir seulement le polycopié et de baser son discours sur lui.
+
+\hypertarget{les-diapos}{%
+\subsection{Les diapos}\label{les-diapos}}
+
+Dans cette section nous allons voir d'après quels principes on peut concevoir sa présentation, afin de souligner de manière efficace son discours.
+
+\hypertarget{la-grille-de-base}{%
+\subsubsection{La grille de base}\label{la-grille-de-base}}
+
+\hypertarget{la-relation-signal-noise}{%
+\subsubsection{La relation ``signal-noise''}\label{la-relation-signal-noise}}
+
+\hypertarget{picture-superiority-effect}{%
+\subsubsection{Picture superiority effect}\label{picture-superiority-effect}}
+
+\hypertarget{contraster-aligner-rapprocher-et-ruxe9puxe9ter}{%
+\subsubsection{Contraster, aligner, rapprocher et répéter}\label{contraster-aligner-rapprocher-et-ruxe9puxe9ter}}
+
+\begin{figure}
+\centering
+\includegraphics{img/diapo-contrast.jpg}
+\caption{Est-ce que le titre de la présentation est bien lisible ?}
+\end{figure}
+
+\hypertarget{que-dire-sur-les-points-cluxe9s}{%
+\paragraph{Que dire sur les points clés ?}\label{que-dire-sur-les-points-cluxe9s}}
+
+\hypertarget{les-uxe9luxe9ments-du-design}{%
+\subsubsection{Les éléments du design}\label{les-uxe9luxe9ments-du-design}}
+
+\hypertarget{ruxe9partition-de-lespace}{%
+\paragraph{Répartition de l'espace}\label{ruxe9partition-de-lespace}}
+
+\hypertarget{typographie}{%
+\paragraph{Typographie}\label{typographie}}
+
+\hypertarget{couleurs}{%
+\paragraph{Couleurs}\label{couleurs}}
+
+Avec les couleurs du diaporama il est possible de s'exprimer voire d'influencer le public d'une certaine manière. Cf. \href{https://www.adobe.com/creativecloud/design/discover/color-meaning.html}{Color Meanings} pour explications plus précises sur significations des couleurs différents. Que faire si on a trouvé sa couleur principale? Comment obtenir une palette des couleurs adéquates? Un conseil: \href{www.colors.adobe.com}{Adobe Colors}. Ici vous pouvez à partir des schémas de combinaison des couleurs définir une palette harmonisée. Il est aussi possible de faire créer une palette a partir d'une photo clé qu'on va utiliser dans sa présentation. En plus il y a un tas de palettes déjà faites à découvrir -- donc pas besoin de concevoir une toute nouvelle palette.\footnote{Pour une explication comment créer une palette de couleurs en PowerPoint, voir cette vidéo: \href{https://youtu.be/gp5yhXABP4I?t=150}{YouTube}.}
+
+\hypertarget{une-foire-aux-pruxe9sentations-moduxe8les}{%
+\subsubsection{Une foire aux présentations modèles}\label{une-foire-aux-pruxe9sentations-moduxe8les}}
+
+\textbf{Tache:} Créez un design avec une palette des couleurs, décidez vous aussi pour une police de caractères. Ajoutez ensuite une diapo avec la grille de vos diapos et deux diapos exemplaires. Un modèle est mis à votre disposition.\footnote{Vous trouverez des modèles à remplir ici: \href{}{Drive}}
+
+\hypertarget{vos-notes}{%
+\subsection{Vos notes}\label{vos-notes}}
+
+\hypertarget{le-polycopiuxe9}{%
+\subsection{Le polycopié}\label{le-polycopiuxe9}}
+
+Avant de commencer la section : trois diapos par pages A4 ne sont pas un polycopié. PowerPoint ou Keynote ne sont pas d'outils pour créer un text. Il y a des outils beaucoup plus appropriés : LaTeX, Microsoft Word, LibreOffice Writer, InDesgin\ldots{}
+
+Pour créer des formats différents d'un document. Il peut être approprié de travailler en \emph{Markdown}. Il y a des éditeurs diverses qui permettent d'écrire en \emph{Markdown} (voir Tab. \ref{tab:Editeurs-Markdown}). \emph{Pandoc} permet ensuite d'émettre des documents dans différents formats.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2361}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2083}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5556}}@{}}
+\caption{\label{tab:Editeurs-Markdown} Editeurs Markdown}\tabularnewline
+\toprule()
+\endhead
+RStudio & gratuit & possibilité de créer des documents html, pdf, epub\ldots{} \\
+Typora & 15\$ & possibilité de créer des documents html, pdf, epub\ldots{} \\
+Microsoft Visual Studio & gratuit & possibilité de créer des documents html, pdf, epub\ldots{} \\
+\bottomrule()
+\end{longtable}
+
+Pour obtenir des textes bien placés, je recommande fortement d'utiliser LaTeX. Si on se connaît bien en conception de documents, InDesign ou Scribus (gratuit) peuvent être une très bonne alternative. Microsoft Word est dans presque tous les cas le plus mauvais choix.
+
+\hypertarget{une-foire-aux-polycopiuxe9s-moduxe8les}{%
+\subsubsection{Une foire aux polycopiés modèles}\label{une-foire-aux-polycopiuxe9s-moduxe8les}}
+
 \hypertarget{getgitbook}{%
-\chapter{Get your GitBook}\label{getgitbook}}
+\section{Get your GitBook}\label{getgitbook}}
 
 To get your GitBook, you should follow these steps:
 
@@ -223,7 +315,7 @@ To get your GitBook, you should follow these steps:
 \end{enumerate}
 
 \hypertarget{editing-the-book}{%
-\chapter{Editing the book}\label{editing-the-book}}
+\section{Editing the book}\label{editing-the-book}}
 
 The contents of the book are written in \textbf{RMarkdown}. You can use any formatting code that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\). Moreover, you can include chunks of R-code, like this:
 
@@ -238,7 +330,7 @@ To edit the book, you can change the text in the \texttt{.Rmd} files. Each Rmd f
 Any sub-headings within the chapter are indicated with several \texttt{\#} signs, e.g., \texttt{\#\#} (level 2) and \texttt{\#\#\#} (level 3).
 
 \hypertarget{creating-new-chapters}{%
-\section{Creating new chapters}\label{creating-new-chapters}}
+\subsection{Creating new chapters}\label{creating-new-chapters}}
 
 To create a new chapter, you must follow two steps: 1) Create the file, and 2) Include it in the list of chapters.
 
@@ -255,6 +347,7 @@ Second, to include it in the list of chapters, open the file \texttt{\_bookdown.
 
 rmd\_files: {[}``index.Rmd'',
 ``plan-du-cours.Rmd'',
+``creer-diapos.Rmd'',
 ``get\_your\_gitbook.Rmd'',
 ``editing\_the\_book.Rmd'',
 ``figures\_tables.Rmd'',
@@ -267,17 +360,17 @@ rmd\_files: {[}``index.Rmd'',
 Insert the file name of your new chapter in the desired position in this list.
 
 \hypertarget{linking-across-chapters}{%
-\section{Linking across chapters}\label{linking-across-chapters}}
+\subsection{Linking across chapters}\label{linking-across-chapters}}
 
 You can label chapter and section titles using \texttt{\{\#label\}} after them. The labels can be used as cross-references. For example, we can link to Chapter \ref{figtab}. If you do not manually label chapters, there will be automatic labels anyway, e.g., Chapter \ref{examples}.
 
 \hypertarget{advanced-editing}{%
-\section{Advanced editing}\label{advanced-editing}}
+\subsection{Advanced editing}\label{advanced-editing}}
 
 The convenient \href{https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf}{Rmarkdown Cheat Sheet} by Rstudio covers most of the knowledge required for advanced Rmarkdown editing. You can print it out and stick it to your wall!
 
 \hypertarget{figtab}{%
-\chapter{Figures and tables}\label{figtab}}
+\section{Figures and tables}\label{figtab}}
 
 Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
 
@@ -346,40 +439,40 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \hypertarget{examples}{%
-\chapter{Examples}\label{examples}}
+\section{Examples}\label{examples}}
 
 Here are some examples of other GitBooks for courses; if you want to have your GitBook added to the list, please send a \href{https://github.com/cjvanlissa/gitbook-demo/pulls}{Pull Request} (here's \href{https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request}{how to send a pull request}).
 
 \hypertarget{statistics-with-r-h.-quene}{%
-\section{Statistics with R (H. Quene)}\label{statistics-with-r-h.-quene}}
+\subsection{Statistics with R (H. Quene)}\label{statistics-with-r-h.-quene}}
 
 \url{https://hugoquene.github.io/emlar2020}
 
 A GitBook for a tutorial on \emph{Statistics with R (Basics)}, held as part of the workshop on Experimental Methods in Language Acquisition Research (EMLAR, \url{https://emlar.wp.hum.uu.nl/}), Utrecht, on 17 April 2020. This compact introduction helps you with your first steps into R.
 
 \hypertarget{theory-construction-and-statistical-modeling-c.-j.-van-lissa}{%
-\section{Theory Construction and Statistical Modeling (C. J. van Lissa)}\label{theory-construction-and-statistical-modeling-c.-j.-van-lissa}}
+\subsection{Theory Construction and Statistical Modeling (C. J. van Lissa)}\label{theory-construction-and-statistical-modeling-c.-j.-van-lissa}}
 
 \url{http://cjvanlissa.github.io/TCSM}
 
 A GitBook for the course \emph{``Theory Construction and Statistical Modeling''}, with some interesting code, for example: Blocks of answers to the tutorial questions that can be collapsed and expanded.
 
 \hypertarget{doing-meta-analysis-in-r-c.-j.-van-lissa}{%
-\section{Doing Meta-Analysis in R (C. J. van Lissa)}\label{doing-meta-analysis-in-r-c.-j.-van-lissa}}
+\subsection{Doing Meta-Analysis in R (C. J. van Lissa)}\label{doing-meta-analysis-in-r-c.-j.-van-lissa}}
 
 \url{http://cjvanlissa.github.io/Doing-Meta-Analysis-in-R}
 
 A GitBook on doing meta-analysis in R, based on the book `Doing Meta-Analysis in R', by Mathias Harrer, Pim Cuijpers, \& David Ebert, and adapted to focus on the \href{https://cran.r-project.org/web/packages/metafor/index.html}{metafor} package, and exploring heterogeneity using \href{https://cran.r-project.org/web/packages/metaforest/index.html}{metaforest}. The original can be found here: \url{https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/}
 
 \hypertarget{muxe9todos-quantitativos-em-psicologia-com-r-l.-anunciauxe7uxe3o}{%
-\section{Métodos quantitativos em Psicologia com R (L. Anunciação)}\label{muxe9todos-quantitativos-em-psicologia-com-r-l.-anunciauxe7uxe3o}}
+\subsection{Métodos quantitativos em Psicologia com R (L. Anunciação)}\label{muxe9todos-quantitativos-em-psicologia-com-r-l.-anunciauxe7uxe3o}}
 
 \url{https://anovabr.github.io/mqt/}
 
 This book provides a short and to-the-point exposition on the essentials of statistics, and was written for undergraduate students at the Pontifical Catholic University of Rio de Janeiro (PUC-Rio). To a lesser degree, the mathematical modeling of statistical questions will be addressed. This book might be relevant for Portuguese-speaking students who enroll for laboratory-based statistics and anyone who wants to learn R.
 
 \hypertarget{open-educational-resources}{%
-\chapter{Open Educational Resources}\label{open-educational-resources}}
+\section{Open Educational Resources}\label{open-educational-resources}}
 
 UNESCO defines Open Educational Resources as \href{https://en.unesco.org/themes/building-knowledge-societies/oer}{\emph{teaching, learning and research materials in any medium -- digital or otherwise -- that reside in the public domain or have been released under an open license that permits no-cost access, use, adaptation and redistribution by others with no or limited restrictions.}}
 
@@ -402,22 +495,22 @@ Many universities support Open Educational Resources. Here are just a few (feel 
 \end{itemize}
 
 \hypertarget{compatibility-with-existing-systems}{%
-\chapter{Compatibility with existing systems}\label{compatibility-with-existing-systems}}
+\section{Compatibility with existing systems}\label{compatibility-with-existing-systems}}
 
 Many universities offer digital platforms for learning. You might wish to embed your GitBook within these existing systems. Here are two ways in which you might do that. Currently, this section only discusses BlackBoard, but the same principles should apply to other platforms.
 
 \hypertarget{add-a-hyperlink}{%
-\section{Add a hyperlink}\label{add-a-hyperlink}}
+\subsection{Add a hyperlink}\label{add-a-hyperlink}}
 
 You can add a link to your GitBook in the BlackBoard course menu by following \href{https://help.blackboard.com/Learn/Instructor/Course_Content/Create_Content/Create_Course_Materials/Link_to_Websites}{this tutorial}.
 
 \hypertarget{embed-the-whole-book}{%
-\section{Embed the whole book}\label{embed-the-whole-book}}
+\subsection{Embed the whole book}\label{embed-the-whole-book}}
 
 You can add a Blank Page to your BlackBoard course menu, and fill that page with a full-size ``iframe'' - a web page within the web page. \href{https://mycampus.maine.edu/web/uc-faculty-portal/education-technology/-/asset_publisher/vEKuFJYvDY5K/content/inserting-an-iframe-into-blackboard?inheritRedirect=false}{This tutorial} explains how to do it. It is possible that your university is blocking this feature, however.
 
 \hypertarget{license-your-gitbook}{%
-\chapter{License your GitBook}\label{license-your-gitbook}}
+\section{License your GitBook}\label{license-your-gitbook}}
 
 In the spirit of Open Science, it is good to think about making your course materials Open Source. That means that other people can use them. In principle, if you publish materials online without license information, you hold the copyright to those materials. If you want them to be Open Source, you must include a license. It is not always obvious what license to choose.
 
