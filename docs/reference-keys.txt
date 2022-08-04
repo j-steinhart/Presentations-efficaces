@@ -18,6 +18,7 @@ couleurs
 une-foire-aux-présentations-modèles
 vos-notes
 le-polycopié
+conception-du-polycopié
 une-foire-aux-polycopiés-modèles
 getgitbook
 editing-the-book

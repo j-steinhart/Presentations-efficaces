@@ -1,6 +1,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
   a4paper]{article}
@@ -122,8 +123,9 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
+\usepackage[style=authoryear,]{biblatex}
+\addbibresource{book.bib}
+\addbibresource{packages.bib}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
@@ -131,17 +133,22 @@
   pdftitle={Présentations efficaces dans le cadre scolaire et universitaire},
   pdfauthor={Julian Steinhart},
   pdflang={fr},
-  hidelinks,
+  colorlinks=true,
+  linkcolor={purple},
+  filecolor={Maroon},
+  citecolor={magenta},
+  urlcolor={teal},
   pdfcreator={LaTeX via pandoc}}
 
 \title{Présentations efficaces dans le cadre scolaire et universitaire}
 \author{Julian Steinhart}
-\date{2022-07-03}
+\date{2022-08-04}
 
 \begin{document}
 \maketitle
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
@@ -160,6 +167,8 @@ Les étudiantes savent:
   Créer des diaporamas simples, attractifs et efficaces.
 \item
   Délivrer une présentation captivante et convaincante.
+\item
+  Justifier les choix faites dans une présentation. orale
 \end{itemize}
 
 \hypertarget{plan-du-cours}{%
@@ -168,7 +177,7 @@ Les étudiantes savent:
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1806}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3889}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0556}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1528}}@{}}
 \caption{Dates et thèmes du cours}\tabularnewline
 \toprule()
 \endhead
@@ -217,6 +226,8 @@ Dans cette section nous allons voir d'après quels principes on peut concevoir s
 \caption{Est-ce que le titre de la présentation est bien lisible ?}
 \end{figure}
 
+Contraster~:
+
 \hypertarget{que-dire-sur-les-points-cluxe9s}{%
 \paragraph{Que dire sur les points clés ?}\label{que-dire-sur-les-points-cluxe9s}}
 
@@ -229,10 +240,34 @@ Dans cette section nous allons voir d'après quels principes on peut concevoir s
 \hypertarget{typographie}{%
 \paragraph{Typographie}\label{typographie}}
 
+Concevez votre présentation pour les gens assis au fond de la salle~: Bigger si better! Pour verifier si votre police de caractères est assez grande vous pouvez imprimer imprimer trois diapos sur une page (\href{https://www.youtube.com/watch?v=Hgi0_kJ1TAY}{Tutorial \textbar{} YouTube}). Quand tout est bien lisible, il le sera aussi quand vous délivrez la présentation.
+
+Quelle police de caractères~? On distingue des polices avec serifs ou sans serifs.
+
+\begin{figure}
+\centering
+\includegraphics{img/serif-font.png}
+\caption{Une police avec serifs.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{img/sans-font.png}
+\caption{Une police sans serifs.}
+\end{figure}
+
+Avec la qualité des vidéoprojecteurs d'aujourd'hui il est possible de choisir aussi une police sans serifs pour ses diapos. Pour les textes très longs il convient mieux d'utiliser une police avec serifs. Mais pour des textes plus courts -- le cas d'une diaporama -- des polices sans serifs sont aussi possibles. Ils ont un caractère plus léger et moderne \autocite[cf.][]{bühler2017}
+
 \hypertarget{couleurs}{%
 \paragraph{Couleurs}\label{couleurs}}
 
 Avec les couleurs du diaporama il est possible de s'exprimer voire d'influencer le public d'une certaine manière. Cf. \href{https://www.adobe.com/creativecloud/design/discover/color-meaning.html}{Color Meanings} pour explications plus précises sur significations des couleurs différents. Que faire si on a trouvé sa couleur principale? Comment obtenir une palette des couleurs adéquates? Un conseil: \href{www.colors.adobe.com}{Adobe Colors}. Ici vous pouvez à partir des schémas de combinaison des couleurs définir une palette harmonisée. Il est aussi possible de faire créer une palette a partir d'une photo clé qu'on va utiliser dans sa présentation. En plus il y a un tas de palettes déjà faites à découvrir -- donc pas besoin de concevoir une toute nouvelle palette.\footnote{Pour une explication comment créer une palette de couleurs en PowerPoint, voir cette vidéo: \href{https://youtu.be/gp5yhXABP4I?t=150}{YouTube}.}
+
+Lumière éteinte ou allumée~? Quand le vidéoprojecteur est assez fort, pourquoi éteindre la lumière~?
+
+\begin{quote}
+If you want your presentation to be more effective, then don't touch that light switch. Even when you are using slides, the more lights you can keep on, the better off you will be. Remember, you're trying to connect, to tell a story, to sell an idea to the board or other decision makers. It is verydifficult to make a connection if the audience can't see you. The audience is not there to witness the narration of slides; they are there to listen to you and become engaged with you and your topic. If the audience can't see you, they will find it difficult to listen, and they are certa inly more likely to tune you out. The audience must experience both your ``verbal speech'' and your ``visual speech.'' A relatively small part of your message is actually verba l. The rest of your message is expressed visually and vocally. Influencing people verbally becomes far more difficult when they can't see you \autocite[208]{reynolds2008}.
+\end{quote}
 
 \hypertarget{une-foire-aux-pruxe9sentations-moduxe8les}{%
 \subsubsection{Une foire aux présentations modèles}\label{une-foire-aux-pruxe9sentations-moduxe8les}}
@@ -245,7 +280,7 @@ Avec les couleurs du diaporama il est possible de s'exprimer voire d'influencer 
 \hypertarget{le-polycopiuxe9}{%
 \subsection{Le polycopié}\label{le-polycopiuxe9}}
 
-Avant de commencer la section : trois diapos par pages A4 ne sont pas un polycopié. PowerPoint ou Keynote ne sont pas d'outils pour créer un text. Il y a des outils beaucoup plus appropriés : LaTeX, Microsoft Word, LibreOffice Writer, InDesgin\ldots{}
+Avant de commencer la section : trois diapos par page A4 ne sont pas un polycopié. PowerPoint ou Keynote ne sont pas d'outils pour créer un text. Il y a des outils beaucoup plus appropriés : LaTeX, Microsoft Word, Microsoft Publisher, LibreOffice Writer, Adobe InDesgin\ldots{}
 
 Pour créer des formats différents d'un document. Il peut être approprié de travailler en \emph{Markdown}. Il y a des éditeurs diverses qui permettent d'écrire en \emph{Markdown} (voir Tab. \ref{tab:Editeurs-Markdown}). \emph{Pandoc} permet ensuite d'émettre des documents dans différents formats.
 
@@ -262,10 +297,26 @@ Microsoft Visual Studio & gratuit & possibilité de créer des documents html, p
 \bottomrule()
 \end{longtable}
 
-Pour obtenir des textes bien placés, je recommande fortement d'utiliser LaTeX. Si on se connaît bien en conception de documents, InDesign ou Scribus (gratuit) peuvent être une très bonne alternative. Microsoft Word est dans presque tous les cas le plus mauvais choix.
+Pour obtenir des textes bien placés, je recommande fortement d'utiliser LaTeX. Si on se connaît bien en conception de documents, Microsoft Publisher, Adobe InDesign ou Scribus (gratuit) peuvent être une très bonne alternative. Microsoft Word est dans presque tous les cas le plus mauvais choix et la création du document prendra plus de temps.
+
+\hypertarget{conception-du-polycopiuxe9}{%
+\subsubsection{Conception du polycopié}\label{conception-du-polycopiuxe9}}
+
+\begin{itemize}
+\item
+  Répartition sur la page~: Vous êtes plutôt contraint à utiliser un format A4. Laissez donc des marges assez larges afin de garder une bonne lisibilité. Une bonne règle est de composer des lignes de 50-70 caractères. Une alternative peut être de faire deux colonnes ou opter pour une mise en page asymétrique. \href{https://fr.wikipedia.org/wiki/Edward_Tufte}{Edward Tufte} conçoit ses \href{https://www.progressiprocity.com/home/make-a-handout-like-edward-tufte-965.htm}{polycopiés} par exemple de cette façon.
+\item
+  Choisissez une police de caractères sérieuse et bien lisible. Pour plus de règles de typographie voir ce post~: \href{https://blog.hubspot.com/marketing/typography-terms-introduction}{Typography Basics \textbar{} Hubspot}.
+\item
+  Sur le polycopié mettez toutes les informations importantes pour comprendre vos propos. Contrairement à votre PowerPoint le polycopié devrait être compréhensible sans avoir entendu votre discours. Selon le type de la présentation ajoutez votre bibliographie.
+\item
+  Pour les question à la suite de votre discours, il est envisageable d'ajouter vos coordonnées.
+\end{itemize}
 
 \hypertarget{une-foire-aux-polycopiuxe9s-moduxe8les}{%
 \subsubsection{Une foire aux polycopiés modèles}\label{une-foire-aux-polycopiuxe9s-moduxe8les}}
+
+Tâche: Créez des polycopiés modèles en A4~! Ils devront être fournis en format PDF. De préférence, licenciez-les sous une licence CC0 ou CC BY (\href{https://creativecommons.org/about/cclicenses/}{plus d'informations}). Téléchargez les modèles sur la plateforme.
 
 \hypertarget{getgitbook}{%
 \section{Get your GitBook}\label{getgitbook}}
@@ -436,7 +487,7 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \end{tabular}
 \end{table}
 
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+You can write citations, too. For example, we are using the \textbf{bookdown} package \autocite{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \autocite{xie2015}.
 
 \hypertarget{examples}{%
 \section{Examples}\label{examples}}
@@ -530,6 +581,6 @@ You can find \href{https://creativecommons.org/share-your-work/licensing-example
 
 For compatibility between CC and GNU licenses, see \href{https://creativecommons.org/faq/\#Can_I_apply_a_Creative_Commons_license_to_software.3F}{this FAQ}.
 
-  \bibliography{book.bib,packages.bib}
+\printbibliography
 
 \end{document}

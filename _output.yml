@@ -12,7 +12,7 @@ bookdown::pdf_document2:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-  citation_package: natbib
+  citation_package: biblatex
   keep_tex: yes
 bookdown::tufte_book2:
   includes:

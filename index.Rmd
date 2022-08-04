@@ -11,9 +11,13 @@ bibliography:
 - book.bib
 - packages.bib
 site: bookdown::bookdown_site
-biblio-style: apalike
+biblio-style: authoryear
 lang: fr
 mainfont: Minion Pro
+sansfont: Myriad Pro
+urlcolor: teal
+linkcolor: purple
+citecolor: magenta
 ---
 
 # Introduction
@@ -27,3 +31,5 @@ Les étudiantes savent:
 -   Créer des diaporamas simples, attractifs et efficaces.
 
 -   Délivrer une présentation captivante et convaincante.
+
+-   Justifier les choix faites dans une présentation. orale
